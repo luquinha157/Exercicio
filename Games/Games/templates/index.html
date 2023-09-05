@@ -355,7 +355,7 @@
             </div>
         </div>
     </div>
-
+    {% for x in imagens %} 
     <div class="bg-sky pd-top-80 pd-bottom-50" id="latest">
         <div class="container">
             <div class="row">
@@ -601,7 +601,8 @@
             </div>
         </div>
     </div>
-    
+    {% endfor %}
+
     {% for x in imagens %} 
     <div class="pd-top-80 pd-bottom-50" id="grid">
         <div class="container">
@@ -714,7 +715,7 @@
                             <div class="post-meta-single">
                                 <p><i class="fa fa-clock-o"></i>08.22.2020</p>
                             </div>
-                            <h6 class="title"><a href="#">Internet For Things - New results </a></h6>
+                            <h6 class="title"><a href="#">{{x.description}} </a></h6>
                         </div>
                     </div>
                 </div>
