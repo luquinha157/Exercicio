@@ -6,7 +6,7 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
     all_products = PgPrincipal.objects.all() 
-    return render(request, "index.html", {"guitarras": all_products})
+    return render(request, "index.html", {"imagens": all_products})
 
 def test1(request):
     #all_entries = Site.objects.get(id=1)

@@ -362,7 +362,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay-bg">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/9.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                         </div>
                         <div class="details">
                             <div class="post-meta-single mb-3">
@@ -378,7 +378,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/10.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <p class="btn-date"><i class="fa fa-clock-o"></i>08.22.2020</p>
                         </div>
                         <div class="details">
@@ -387,7 +387,7 @@
                     </div>
                     <div class="single-post-wrap">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/11.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <p class="btn-date"><i class="fa fa-clock-o"></i>08.22.2020</p>
                         </div>
                         <div class="details">
@@ -398,7 +398,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/12.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <p class="btn-date"><i class="fa fa-clock-o"></i>08.22.2020</p>
                         </div>
                         <div class="details">
@@ -407,7 +407,7 @@
                     </div>
                     <div class="single-post-wrap">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/13.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <p class="btn-date"><i class="fa fa-clock-o"></i>08.22.2020</p>
                         </div>
                         <div class="details">
@@ -425,7 +425,7 @@
                                 <div class="single-post-list-wrap">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img src="{% static 'assets/img/post/list/1.png' %}" alt="img">
+                                            <img src="{{x.path.url}}" alt="img">
                                         </div>
                                         <div class="media-body">
                                             <div class="details">
@@ -442,7 +442,7 @@
                                 <div class="single-post-list-wrap">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img src="{% static 'assets/img/post/list/2.png' %}" alt="img">
+                                            <img src="{{x.path.url}}" alt="img">
                                         </div>
                                         <div class="media-body">
                                             <div class="details">
@@ -459,7 +459,7 @@
                                 <div class="single-post-list-wrap">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img src="{% static 'assets/img/post/list/3.png' %}" alt="img">
+                                            <img src="{{x.path.url}}" alt="img">
                                         </div>
                                         <div class="media-body">
                                             <div class="details">
@@ -476,7 +476,7 @@
                                 <div class="single-post-list-wrap">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img src="{% static 'assets/img/post/list/4.png' %}" alt="img">
+                                            <img src="{{x.path.url}}" alt="img">
                                         </div>
                                         <div class="media-body">
                                             <div class="details">
@@ -493,7 +493,7 @@
                                 <div class="single-post-list-wrap mb-0">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img src="{% static 'assets/img/post/list/5.png' %}" alt="img">
+                                            <img src="{{x.path.url}}" alt="img">
                                         </div>
                                         <div class="media-body">
                                             <div class="details">
@@ -512,7 +512,7 @@
                                 <div class="single-post-list-wrap">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img src="{% static 'assets/img/post/list/1.png' %}" alt="img">
+                                            <img src="{{x.path.url}}" alt="img">
                                         </div>
                                         <div class="media-body">
                                             <div class="details">
@@ -529,7 +529,7 @@
                                 <div class="single-post-list-wrap">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img src="{% static 'assets/img/post/list/2.png' %}" alt="img">
+                                            <img src="{{x.path.url}}"alt="img">
                                         </div>
                                         <div class="media-body">
                                             <div class="details">
@@ -546,7 +546,7 @@
                                 <div class="single-post-list-wrap">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img src="{% static 'assets/img/post/list/3.png' %}" alt="img">
+                                            <img src="{{x.path.url}}"alt="img">
                                         </div>
                                         <div class="media-body">
                                             <div class="details">
@@ -601,14 +601,15 @@
             </div>
         </div>
     </div>
-
+    
+    {% for x in imagens %} 
     <div class="pd-top-80 pd-bottom-50" id="grid">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/15.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <a class="tag-base tag-purple" href="#">Tech</a>
                         </div>
                         <div class="details">
@@ -622,7 +623,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/16.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <a class="tag-base tag-green" href="#">Tech</a>
                         </div>
                         <div class="details">
@@ -636,7 +637,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/17.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <a class="tag-base tag-red" href="#">Tech</a>
                         </div>
                         <div class="details">
@@ -650,7 +651,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/18.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <a class="tag-base tag-purple" href="#">Tech</a>
                         </div>
                         <div class="details">
@@ -664,7 +665,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/19.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <a class="tag-base tag-red" href="#">Tech</a>
                         </div>
                         <div class="details">
@@ -678,7 +679,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/20.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <a class="tag-base tag-blue" href="#">Tech</a>
                         </div>
                         <div class="details">
@@ -692,7 +693,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/21.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <a class="tag-base tag-light-green" href="#">Tech</a>
                         </div>
                         <div class="details">
@@ -706,7 +707,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-post-wrap style-overlay">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/post/22.png' %}" alt="img">
+                            <img src="{{x.path.url}}" alt="img">
                             <a class="tag-base tag-blue" href="#">Tech</a>
                         </div>
                         <div class="details">
@@ -720,7 +721,7 @@
             </div>
         </div>  
     </div>
-
+    {% endfor %}
 
     <!-- back to top area start -->
     <div class="back-to-top">
